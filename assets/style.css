@@ -173,6 +173,21 @@ footer.site-footer { background: #fff; border-top: 1px solid var(--color-border)
 .social-links svg { width: 22px; height: 22px; }
 .footer-bottom { border-top: 1px solid var(--color-border); padding: 18px 20px; text-align: center; font-size: .8rem; color: var(--color-text-soft); }
 
+/* ---------- Scroll animations (live: us_animate_this afb/afl) ---------- */
+.anim { opacity: 0; transition: opacity .7s ease, transform .7s ease; will-change: opacity, transform; }
+.anim-fb { transform: translateY(36px); }
+.anim-fl { transform: translateX(-42px); }
+.anim.anim-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .anim { opacity: 1; transform: none; transition: none; }
+}
+
+/* ---------- Back to top (live: .w-toplink) ---------- */
+.toplink { position: fixed; right: 22px; bottom: 22px; z-index: 200; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: var(--brand); color: #fff; opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity .3s ease, transform .3s ease, visibility .3s; }
+.toplink svg { width: 20px; height: 20px; }
+.toplink:hover { color: #fff; background: var(--color-btn-dark); }
+.toplink.show { opacity: 1; visibility: visible; transform: none; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
