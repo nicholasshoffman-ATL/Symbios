@@ -1,0 +1,154 @@
+/* Symbios Health — shared stylesheet (Symbios Fit rebrand build)
+   Palette + type sourced from live site (Impreza theme custom props) */
+:root {
+  --color-primary: #A29382;      /* warm taupe */
+  --color-primary-dark: #786c5f;
+  --color-accent: #5c485c;       /* plum (alt content bg) */
+  --color-bg: #F1ECE8;           /* cream */
+  --color-content-bg: #ffffff;
+  --color-heading: #121212;
+  --color-text: #0f0f0f;
+  --color-text-soft: #494949;
+  --color-header-text: #4D585A;
+  --color-border: #d6d6d6;
+  --font-body: 'Montserrat', sans-serif;
+  --font-heading: 'Cormorant Garamond', serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: var(--color-text); background: var(--color-content-bg); font-size: 16px; line-height: 1.7; font-weight: 300; }
+h1, h2, h3 { font-family: var(--font-heading); color: var(--color-heading); font-weight: 600; line-height: 1.15; }
+h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
+h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+h3 { font-size: 1.5rem; }
+h4 { font-family: var(--font-body); font-weight: 600; font-size: 1.05rem; letter-spacing: .02em; color: var(--color-heading); }
+p { margin-bottom: 1em; }
+a { color: var(--color-primary-dark); text-decoration: none; transition: color .2s; }
+a:hover { color: var(--color-heading); }
+img { max-width: 100%; height: auto; display: block; }
+
+/* ---------- Top utility bar ---------- */
+.topbar { background: var(--color-primary); color: #fff; font-size: .82rem; }
+.topbar-inner { max-width: 1200px; margin: 0 auto; padding: 6px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.topbar a { color: #fff; font-weight: 500; }
+.topbar a:hover { opacity: .8; color: #fff; }
+.topbar .cta-links { display: flex; gap: 22px; margin-left: auto; }
+
+/* ---------- Header ---------- */
+header.site-header { background: var(--color-bg); position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 0 rgba(0,0,0,.06); }
+.header-inner { max-width: 1200px; margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo img { max-height: 64px; width: auto; }
+/* Text lockup used for the new Symbios Fit brand (logo asset pending) */
+.logo-lockup { line-height: 1.05; }
+.logo-lockup .brand-top { font-family: var(--font-heading); font-size: 1.9rem; font-weight: 700; letter-spacing: .06em; color: var(--color-heading); }
+.logo-lockup .brand-top em { font-style: normal; color: var(--color-primary); }
+.logo-lockup .brand-sub { font-size: .62rem; letter-spacing: .34em; text-transform: uppercase; color: var(--color-header-text); font-weight: 500; }
+nav.main-nav { display: flex; gap: 28px; align-items: center; }
+nav.main-nav > .nav-item { position: relative; }
+nav.main-nav a.nav-link { color: var(--color-header-text); font-size: .84rem; font-weight: 500; text-transform: uppercase; letter-spacing: .05em; padding: 24px 0; display: inline-block; }
+nav.main-nav a.nav-link:hover { color: var(--color-primary); }
+.dropdown { display: none; position: absolute; top: 100%; left: -14px; background: #fff; min-width: 250px; box-shadow: 0 8px 24px rgba(0,0,0,.12); padding: 8px 0; }
+.nav-item:hover .dropdown { display: block; }
+.dropdown a { display: block; padding: 9px 18px; font-size: .84rem; color: var(--color-text-soft); }
+.dropdown a:hover { background: var(--color-bg); color: var(--color-heading); }
+.menu-toggle { display: none; }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; min-height: 540px; display: flex; align-items: center; background-size: cover; background-position: center; }
+.hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,16,12,.62) 0%, rgba(20,16,12,.25) 65%, rgba(20,16,12,.05) 100%); }
+.hero-content { position: relative; max-width: 1200px; margin: 0 auto; padding: 80px 20px; width: 100%; }
+.hero-content .hero-box { max-width: 620px; }
+.hero h1 { color: #fff; margin-bottom: .5em; }
+.hero p { color: #f3efe9; font-size: 1.05rem; max-width: 560px; }
+.hero.hero-inner-page { min-height: 320px; }
+
+/* ---------- Sections ---------- */
+section { padding: 72px 0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .22em; font-size: .78rem; font-weight: 600; color: var(--color-primary); margin-bottom: 10px; }
+.section-title { margin-bottom: .5em; }
+.section-lead { max-width: 780px; color: var(--color-text-soft); }
+.center { text-align: center; }
+.center .section-lead { margin: 0 auto; }
+.bg-cream { background: var(--color-bg); }
+.bg-plum { background: var(--color-accent); }
+.bg-plum h2, .bg-plum h3, .bg-plum p, .bg-plum h4 { color: #fff; }
+.bg-taupe { background: var(--color-primary); }
+.bg-taupe h2, .bg-taupe p { color: #fff; }
+
+/* ---------- Cards / grids ---------- */
+.grid { display: grid; gap: 28px; margin-top: 44px; }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.card { background: #fff; border: 1px solid var(--color-border); display: flex; flex-direction: column; }
+.card img { width: 100%; aspect-ratio: 3/2; object-fit: cover; }
+.card-body { padding: 24px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.card-body p { color: var(--color-text-soft); font-size: .92rem; flex: 1; }
+.card h4 { font-size: 1.12rem; }
+
+/* ---------- Buttons ---------- */
+.btn { display: inline-block; background: var(--color-primary); color: #fff; padding: 13px 34px; font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; transition: background .2s; border: 0; cursor: pointer; font-family: var(--font-body); }
+.btn:hover { background: var(--color-primary-dark); color: #fff; }
+.btn-outline { background: transparent; border: 2px solid var(--color-primary); color: var(--color-primary-dark); }
+.btn-outline:hover { background: var(--color-primary); color: #fff; }
+.btn-light { background: #fff; color: var(--color-heading); }
+.btn-light:hover { background: var(--color-bg); color: var(--color-heading); }
+
+/* ---------- Split (image + text) ---------- */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.split img { width: 100%; object-fit: cover; }
+
+/* ---------- Testimonials ---------- */
+.testimonial { background: #fff; border: 1px solid var(--color-border); padding: 30px; }
+.testimonial p { font-size: .92rem; color: var(--color-text-soft); font-style: italic; }
+.testimonial .who { font-weight: 600; font-style: normal; color: var(--color-heading); margin: 0; }
+
+/* ---------- Checklist ---------- */
+ul.checklist { list-style: none; margin: 20px 0; }
+ul.checklist li { padding-left: 30px; position: relative; margin-bottom: 12px; }
+ul.checklist li::before { content: '✓'; position: absolute; left: 0; color: var(--color-primary); font-weight: 700; }
+
+/* ---------- Forms ---------- */
+form.contact-form { display: grid; gap: 16px; max-width: 640px; }
+form.contact-form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+input, select, textarea { font-family: var(--font-body); font-size: .95rem; padding: 12px 14px; background: #f7f7f7; border: 1px solid #cfcfcf; width: 100%; }
+label { font-size: .82rem; font-weight: 500; color: var(--color-text-soft); }
+
+/* ---------- Brand strip ---------- */
+.brand-strip { display: flex; justify-content: center; align-items: center; gap: 56px; flex-wrap: wrap; margin-top: 40px; }
+.brand-strip img { max-height: 80px; width: auto; filter: none; }
+.brand-strip .logo-lockup { text-align: center; }
+
+/* ---------- Newsletter band ---------- */
+.newsletter { background: var(--color-accent); color: #fff; text-align: center; }
+.newsletter .eyebrow { color: #d8c9d8; }
+
+/* ---------- Footer ---------- */
+footer.site-footer { background: #fff; border-top: 1px solid var(--color-border); padding: 56px 0 0; }
+.footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px 40px; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; align-items: start; }
+.footer-inner h4 { color: var(--color-primary); text-transform: uppercase; letter-spacing: .1em; font-size: .8rem; margin-bottom: 14px; }
+.footer-inner p, .footer-inner a { font-size: .9rem; color: #050505; }
+.footer-inner ul { list-style: none; }
+.footer-inner li { margin-bottom: 8px; }
+.social-links { display: flex; gap: 14px; margin-top: 12px; }
+.social-links a { font-size: .85rem; font-weight: 500; }
+.footer-bottom { border-top: 1px solid var(--color-border); padding: 18px 20px; text-align: center; font-size: .8rem; color: var(--color-text-soft); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .split { grid-template-columns: 1fr; gap: 32px; }
+  .footer-inner { grid-template-columns: 1fr; }
+  nav.main-nav { display: none; }
+  .menu-toggle { display: block; background: none; border: 0; font-size: 1.6rem; color: var(--color-header-text); cursor: pointer; }
+  nav.main-nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--color-bg); padding: 16px 24px; gap: 4px; align-items: flex-start; box-shadow: 0 12px 24px rgba(0,0,0,.12); }
+  nav.main-nav.open a.nav-link { padding: 10px 0; }
+  nav.main-nav.open .dropdown { display: block; position: static; box-shadow: none; background: transparent; padding-left: 14px; min-width: 0; }
+}
+@media (max-width: 560px) {
+  .grid-3, .grid-4, .grid-2 { grid-template-columns: 1fr; }
+  form.contact-form .row2 { grid-template-columns: 1fr; }
+  .topbar-inner { justify-content: center; }
+}
