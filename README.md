@@ -10,6 +10,7 @@ Static rebuild of mysymbios.com and its sub-brand sites, with the former
 - `/physiotherapy/` — Symbios Physio Therapy, 9 pages
 - `/medspa/` — Symbios Aria med spa, 6 pages
 - `assets/style.css` — shared stylesheet (palette/type sourced from the live Impreza theme)
+- `assets/wp/<host>/...` — all images (and the new-patient PDF) downloaded from the live wp-content uploads, mirrored per source host; nothing is hotlinked anymore
 
 ## Contact numbers (verified from live site)
 | Brand | Phone |
@@ -28,6 +29,5 @@ Patient portal: https://25915.portal.athenahealth.com/
 - Social profiles still carry The Edge handles (facebook 61578321875531, instagram @theedgebysymbioshealth, linkedin the-edge-by-symbios-health)
 - "Edge Rx" renamed to "Fit Rx" and "The Mobility Edge" program name kept — confirm with client
 - Forms are static (`action="#"`) — need a form handler (live site uses WordPress forms)
-- Images are hotlinked to live wp-content URLs — download/rehost before the live site changes
 - Blog: page 1 posts carded (linking to live posts); pages 2–17 not migrated
 - Careers "open positions" embed and email-signup embed were not extractable from the live site
