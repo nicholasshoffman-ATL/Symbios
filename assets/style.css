@@ -196,7 +196,7 @@ section { padding: 72px 0; }
 .card h4 { font-size: 1.12rem; }
 
 /* ---------- Buttons (live Impreza button styles) ---------- */
-.btn, .btn-outline, .btn-light { display: inline-block; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; line-height: 1.2; padding: 1.1em 2em; transition: all .3s ease; border-radius: 0; cursor: pointer; font-family: var(--font-body); border: 0; }
+.btn, .btn-outline, .btn-light, .btn-ghost { display: inline-block; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; line-height: 1.2; padding: 1.1em 2em; transition: all .3s ease; border-radius: 0; cursor: pointer; font-family: var(--font-body); border: 0; }
 /* style_6: solid brand */
 .btn { background: var(--brand); color: #fff; }
 .btn:hover { background: var(--color-btn-dark); color: #fff; }
@@ -204,6 +204,9 @@ section { padding: 72px 0; }
 .btn-outline { background: #fff; border: 1px solid #7a7a7a; color: #7a7a7a; }
 .btn-outline:hover { background: var(--color-text); border-color: transparent; color: #fff; }
 .btn-light { background: #fff; color: var(--color-heading); }
+/* ghost: transparent with white border, for use on photo heroes */
+.btn-ghost { background: transparent; border: 2px solid #fff; color: #fff; }
+.btn-ghost:hover { background: #fff; color: var(--color-heading); }
 .btn-light:hover { background: var(--color-bg); color: var(--color-heading); }
 .btn-dark { background: var(--color-btn-dark); color: #fff; }
 .btn-dark:hover { background: var(--brand); color: #fff; }
@@ -236,7 +239,7 @@ label { font-size: .82rem; font-weight: 500; color: var(--color-text-soft); }
 .newsletter { background: var(--brand); color: #fff; text-align: center; }
 .newsletter .eyebrow { color: #363636; }
 .newsletter h2 { color: #fff; }
-.newsletter .signup-img { margin: 24px auto 0; max-width: 420px; }
+.newsletter .signup-img { margin: 24px auto 0; max-width: min(420px, 100%); }
 
 /* ---------- Map embed ---------- */
 .map-band { padding: 0; }
