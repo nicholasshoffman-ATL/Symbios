@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home &ndash; Symbios Health</title>
-<meta name="description" content="Symbios Health — an integrated health and wellness campus in Hilton Head Island, SC. Primary care, physio therapy, fitness, nutrition, and medical aesthetics in one place.">
+<title>Symbios &ndash; Health &amp; Wellness Campus in Hilton Head Island, SC</title>
+<meta name="description" content="One campus, every dimension of your health. Symbios in Hilton Head Island, SC brings together primary care, physical therapy, fitness programs and a physician-led med spa — one connected care team.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,700|Cormorant+Garamond:400,600,700&display=swap" rel="stylesheet">
 <link rel="icon" href="/assets/wp/www.mysymbios.com/2025/08/Symbios-icon-150x150.png" sizes="32x32">
@@ -16,7 +16,7 @@
  "name": "Symbios Health",
  "telephone": "+1-843-738-4800",
  "url": "https://www.mysymbios.com/",
- "description": "Integrated health and wellness campus in Hilton Head Island, SC \u2014 primary care, physical therapy, fitness programs and med spa in one location.",
+ "description": "Integrated health and wellness campus in Hilton Head Island, SC — primary care, physical therapy, fitness programs and med spa in one location.",
  "sameAs": [
   "https://www.facebook.com/SymbiosHealthHHI",
   "https://www.instagram.com/symbioshhi/",
@@ -35,15 +35,16 @@
   "latitude": 32.2138,
   "longitude": -80.6997
  },
+ "department": [
+  {"@type": "MedicalClinic", "name": "Symbios Primary Care", "telephone": "+1-843-738-4800", "url": "https://www.mysymbios.com/primary-care/"},
+  {"@type": "MedicalClinic", "name": "Symbios Physio Therapy", "telephone": "+1-843-738-4300", "url": "https://www.mysymbios.com/physiotherapy/"},
+  {"@type": "ExerciseGym", "name": "Symbios Fit", "telephone": "+1-843-738-4604", "url": "https://www.mysymbios.com/fit/"},
+  {"@type": "HealthAndBeautyBusiness", "name": "Symbios Aria Med Spa", "telephone": "+1-843-738-4000", "url": "https://www.mysymbios.com/medspa/"}
+ ],
  "openingHoursSpecification": [
   {
    "@type": "OpeningHoursSpecification",
-   "dayOfWeek": [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday"
-   ],
+   "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
    "opens": "08:00",
    "closes": "16:30"
   },
@@ -59,6 +60,17 @@
 </script>
 </head>
 <body class="brand-main">
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-stage">
+    <img class="intro-brand ib-1" src="/assets/wp/www.mysymbios.com/2026/03/symbiosprimarycare_tagline.png" alt="">
+    <img class="intro-brand ib-2" src="/assets/wp/www.mysymbios.com/2026/03/symbiosphysio_tagline.png" alt="">
+    <img class="intro-brand ib-3" src="/assets/symbiosfit_tagline.png" alt="">
+    <img class="intro-brand ib-4" src="/assets/wp/www.mysymbios.com/2026/03/arialogo.png" alt="">
+    <div class="intro-tag">One campus. Every dimension of <em>your health</em>.</div>
+    <img class="intro-logo" src="/assets/symbioshealth_tagline.png" alt="Symbios">
+  </div>
+  <button class="intro-skip" type="button" onclick="window.__skipIntro&&window.__skipIntro()">Skip</button>
+</div>
 <nav class="brand-bar" aria-label="Symbios campus brands"><div class="brand-bar-inner"><span class="brand-bar-label">The Symbios Health Campus:</span><a href="/" aria-current="true" class="current">Symbios Health</a><a href="/primary-care/">Primary Care</a><a href="/physiotherapy/">Physio Therapy</a><a href="/fit/">Symbios Fit</a><a href="/medspa/">Aria Med Spa</a></div></nav>
 
 <div class="topbar">
@@ -108,82 +120,82 @@
   <div class="hero-slides"><div class="hero-slide active" style="background-image:url('/assets/wp/www.mysymbios.com/2025/09/healthySlider3.jpg')"></div><div class="hero-slide" style="background-image:url('/assets/wp/www.mysymbios.com/2025/09/healthySlider2.jpg')"></div><div class="hero-slide" style="background-image:url('/assets/wp/www.mysymbios.com/2025/09/healthySlider1.jpg')"></div><div class="hero-slide" style="background-image:url('/assets/wp/www.mysymbios.com/2025/09/primarycare_home1.jpg')"></div></div>
   <div class="hero-content">
     <div class="hero-box">
-      <h1>Transforming Personal Habits to <i>Enhance Daily Living</i></h1>
-      <p>At Symbios&reg; Health, we believe true wellness goes beyond just treating symptoms&mdash;it&rsquo;s about building healthier habits that elevate your everyday life.</p>
+      <h1>One Campus. Every Dimension of <i>Your Health.</i></h1>
+      <p>Primary care, physical therapy, fitness, nutrition, and medical aesthetics&mdash;one connected care team in Hilton Head Island, working from one plan built around you.</p>
+      <p style="margin-top:24px"><a class="btn" href="#campus">Explore the Campus</a>&nbsp;&nbsp;<a class="btn btn-outline" style="border-color:#fff;color:#fff" href="/request-an-appointment/">Schedule a Consultation</a></p>
     </div>
   </div>
   <div class="hero-curve"><svg viewBox="0 0 64 8" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M64 8 L64 0 Q32 15.8 0 0 L0 8 Z"/></svg></div>
 </div>
 
-<section>
+<section id="campus">
   <div class="container center">
-    <div class="eyebrow">Our Services</div>
-    <h2 class="section-title">What We Do</h2>
-    <p class="section-lead">At Symbios&reg; Health, we don&rsquo;t just treat&mdash;we transform. Our one-of-a-kind campus offers everything you need<br>to live healthy, fit, and beautiful for life, all in one place.</p>
-    <div class="grid grid-3">
-      <div class="iconbox">
-        <div class="icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M18 8v4M34 8v4"/><path d="M18 10h-4a2 2 0 0 0-2 2v14a14 14 0 0 0 28 0V12a2 2 0 0 0-2-2h-4"/><path d="M26 40v6a12 12 0 0 0 24 0v-8"/><circle cx="50" cy="32" r="6"/></svg></div>
-        <h4>Primary Care</h4>
-        <p>Our personalized primary care focuses on prevention, longevity, and optimal health&mdash;not just symptom management.</p>
-        <a class="learn-more" href="/primary-care/">Learn More</a>
-      </div>
-      <div class="iconbox">
-        <div class="icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M20 32h24"/><rect x="10" y="20" width="6" height="24" rx="2"/><rect x="48" y="20" width="6" height="24" rx="2"/><rect x="2" y="26" width="5" height="12" rx="2"/><rect x="57" y="26" width="5" height="12" rx="2"/></svg></div>
-        <h4>Physio Therapy</h4>
-        <p>Recover stronger with targeted therapy programs designed to restore movement, reduce pain, and rebuild confidence.</p>
-        <a class="learn-more" href="/physiotherapy/">Learn More</a>
-      </div>
-      <div class="iconbox">
-        <div class="icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><ellipse cx="38" cy="22" rx="16" ry="19" transform="rotate(30 38 22)"/><path d="M28 38 10 56M31 12v22M45 15v22M25 20h24M23 29h26"/></svg></div>
-        <h4>Recreational Sports Health</h4>
-        <p>Whether you play tennis, pickleball, or golf, our sport-specific programs help you move better, avoid injury, and perform at your best.</p>
-        <a class="learn-more" href="/fit/">Learn More</a>
-      </div>
-      <div class="iconbox">
-        <div class="icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M8 30h48a24 24 0 0 1-48 0Z"/><path d="M22 30c0-10 6-16 16-18-2 8 0 14-6 18"/><path d="M40 30c2-6 8-10 14-10-1 5-4 8-8 10"/></svg></div>
-        <h4>Weight Loss Management</h4>
-        <p>More than a number on the scale&mdash;our weight loss programs combine medical guidance, nutrition, movement, and mindset coaching.</p>
-        <a class="learn-more" href="/fit/healthy-weight-loss/">Learn More</a>
-      </div>
-      <div class="iconbox">
-        <div class="icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="12" width="36" height="44" rx="4"/><path d="M24 12a8 8 0 0 1 16 0"/><path d="M22 26h2M30 26h12M22 36h2M30 36h12"/><path d="M21 45l3 3 6-6"/></svg></div>
-        <h4>Women&rsquo;s Health Training</h4>
-        <p>Built for women, by women&mdash;our StrongHer Movement focuses on hormonal health, functional strength, and total body resilience.</p>
-        <a class="learn-more" href="/fit/strongher-movement/">Learn More</a>
-      </div>
-      <div class="iconbox">
-        <div class="icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M32 44c-6-4-10-10-10-17 0-5 4-9 10-13 6 4 10 8 10 13 0 7-4 13-10 17Z"/><path d="M32 44c-8 2-16 0-22-6 8-2 14-2 22 6ZM32 44c8 2 16 0 22-6-8-2-14-2-22 6Z"/></svg></div>
-        <h4>Medical Spa Services</h4>
-        <p>Look as vibrant as you feel. Our med spa blends advanced skin and body treatments&mdash;like facials, injectables, laser therapies, and body sculpting.</p>
-        <a class="learn-more" href="/medspa/">Learn More</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container split">
-    <img src="/assets/wp/www.mysymbios.com/2025/08/SymbiosHealth_Home2-1-1024x683.jpg" alt="The Symbios Health campus">
-    <div>
-      <div class="eyebrow">Welcome</div>
-      <h2 class="section-title">About Us</h2>
-      <p>Our unique, integrated health and wellness campus brings together primary care, fitness, nutrition, and aesthetics&mdash;all in one connected location&mdash;to support your health from every angle.</p>
-      <p>Whether you&rsquo;re here for preventive care, personalized training, hormone optimization, skin rejuvenation, or nutritional support, our expert team collaborates to create a plan that&rsquo;s tailored to you.</p>
-      <p>The Symbios Health campus is more than a place&mdash;it&rsquo;s a community dedicated to personalized, holistic care. We focus on measurable results and sustainable change, guiding you through each stage of behavioral transformation&mdash;from awareness to lasting action.</p>
-      <p style="margin-top:24px"><a class="btn" href="/about-us/">Meet Our Team</a></p>
+    <div class="eyebrow">The Symbios Campus</div>
+    <h2 class="section-title">Where Would You Like to Start?</h2>
+    <p class="section-lead" style="margin:0 auto">Four practices, one address, one care team. Wherever you begin, every Symbios provider works from the same picture of your health.</p>
+    <div class="door-grid">
+      <a class="door" href="/primary-care/" style="--door:#4EA647">
+        <span class="door-logo"><img src="/assets/wp/www.mysymbios.com/2026/03/symbiosprimarycare_tagline.png" alt="Symbios Primary Care"></span>
+        <p class="door-blurb">Prevention-first medicine focused on longevity and optimal health&mdash;not just symptom management.</p>
+        <ul>
+          <li>Family &amp; internal medicine</li>
+          <li>Men&rsquo;s &amp; women&rsquo;s health</li>
+          <li>Nutritional health</li>
+          <li>Same-week sick care</li>
+        </ul>
+        <span class="door-tel">(843) 738-4800</span>
+        <span class="door-btn">Visit Primary Care</span>
+      </a>
+      <a class="door" href="/physiotherapy/" style="--door:#A81A8D">
+        <span class="door-logo"><img src="/assets/wp/www.mysymbios.com/2026/03/symbiosphysio_tagline.png" alt="Symbios Physio Therapy"></span>
+        <p class="door-blurb">Restore movement, reduce pain, and rebuild confidence with doctor-of-physical-therapy-led care.</p>
+        <ul>
+          <li>Pain &amp; injury rehabilitation</li>
+          <li>Sports injury recovery</li>
+          <li>Pre- &amp; post-surgical care</li>
+          <li>Pelvic floor &amp; lymphedema</li>
+        </ul>
+        <span class="door-tel">(843) 738-4300</span>
+        <span class="door-btn">Visit Physio Therapy</span>
+      </a>
+      <a class="door" href="/fit/" style="--door:#A29382">
+        <span class="door-logo"><img src="/assets/symbiosfit_tagline.png" alt="Symbios Fit"></span>
+        <p class="door-blurb">Everyday Living Programs that turn assessments into personalized strength, mobility, and energy.</p>
+        <ul>
+          <li>Comprehensive assessments</li>
+          <li>Healthy weight loss</li>
+          <li>Golf, tennis &amp; pickleball health</li>
+          <li>Women&rsquo;s wellness &amp; strength</li>
+        </ul>
+        <span class="door-tel">(843) 738-4604</span>
+        <span class="door-btn">Visit Symbios Fit</span>
+      </a>
+      <a class="door" href="/medspa/" style="--door:#1BBED5">
+        <span class="door-logo"><img src="/assets/wp/www.mysymbios.com/2026/03/arialogo.png" alt="Symbios Aria Med Spa"></span>
+        <p class="door-blurb">Physician-led aesthetics by Dr. Stephen Luther&mdash;natural, lasting results in a medical setting.</p>
+        <ul>
+          <li>Facials &amp; skin rejuvenation</li>
+          <li>Injectables &amp; fillers</li>
+          <li>Vampire Facials (PRP)</li>
+          <li>Body contouring</li>
+        </ul>
+        <span class="door-tel">(843) 738-4000</span>
+        <span class="door-btn">Visit Aria Med Spa</span>
+      </a>
     </div>
   </div>
 </section>
 
 <section class="bg-cream">
-  <div class="container center">
-    <div class="eyebrow">Explore</div>
-    <h2 class="section-title">Explore Our Campus</h2>
-    <div class="brand-strip">
-      <a href="/primary-care/"><img src="/assets/wp/www.mysymbios.com/2026/03/symbiosprimarycare_tagline.png" alt="Symbios Primary Care"></a>
-      <a href="/physiotherapy/"><img src="/assets/wp/www.mysymbios.com/2026/03/symbiosphysio_tagline.png" alt="Symbios Physio Therapy"></a>
-      <a href="/fit/"><img src="/assets/symbiosfit_tagline.png" alt="Symbios Fit - Healthy, fit and beautiful for life"></a>
-      <a href="/medspa/"><img src="/assets/wp/www.mysymbios.com/2026/03/arialogo.png" alt="Symbios Aria Med Spa"></a>
+  <div class="container split">
+    <img src="/assets/wp/www.mysymbios.com/2025/08/SymbiosHealth_Home2-1-1024x683.jpg" alt="The Symbios Health campus">
+    <div>
+      <div class="eyebrow">Why One Campus Matters</div>
+      <h2 class="section-title">One Team. One Plan. One Place.</h2>
+      <p>Our unique, integrated health and wellness campus brings together primary care, fitness, nutrition, and aesthetics&mdash;all in one connected location&mdash;to support your health from every angle.</p>
+      <p>Whether you&rsquo;re here for preventive care, personalized training, hormone optimization, skin rejuvenation, or nutritional support, our expert team collaborates to create a plan that&rsquo;s tailored to you. Your physician, physical therapist, trainers, and aesthetics specialists all work under the same roof&mdash;so nothing about your care gets lost between offices.</p>
+      <p>The Symbios Health campus is more than a place&mdash;it&rsquo;s a community dedicated to personalized, holistic care. We focus on measurable results and sustainable change, guiding you through each stage of behavioral transformation&mdash;from awareness to lasting action.</p>
+      <p style="margin-top:24px"><a class="btn" href="/about-us/">Meet Our Team</a></p>
     </div>
   </div>
 </section>
@@ -279,7 +291,7 @@
   <div class="footer-inner">
     <div class="footer-logo"><img src="/assets/symbioshealth_tagline.png" alt="Symbios Health"></div>
     <div class="footer-right">
-      <p class="footer-brandname">Symbios Health</p><p>460 William Hilton Parkway<br>Hilton Head Island, SC 29926</p>
+      <p class="footer-brandname">Symbios Health</p><p>460 William Hilton Parkway<br>Hilton Head Island, SC 29926<br>Tel: <a href="tel:+18437384800">(843) 738-4800</a></p>
       <div class="social-links">
         <a href="https://www.facebook.com/SymbiosHealthHHI" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13.4 21v-8.1h2.7l.4-3.1h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.6V3.5c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.3H7.5v3.1h2.7V21h3.2z"/></svg></a>
         <a href="https://www.instagram.com/symbioshhi/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" xmlns="http://www.w3.org/2000/svg"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
@@ -291,5 +303,29 @@
 </footer>
 
 <script src="/assets/site.js" defer></script>
+<script>
+(function () {
+  var intro = document.getElementById('intro');
+  if (!intro) return;
+  var reduce = false, seen = false;
+  try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+  try { seen = sessionStorage.getItem('symbiosIntro') === '1'; } catch (e) {}
+  if (reduce || seen) { intro.parentNode.removeChild(intro); return; }
+  try { sessionStorage.setItem('symbiosIntro', '1'); } catch (e) {}
+  document.documentElement.classList.add('intro-lock');
+  intro.style.display = 'flex';
+  intro.setAttribute('aria-hidden', 'false');
+  requestAnimationFrame(function () { requestAnimationFrame(function () { intro.classList.add('run'); }); });
+  var ended = false;
+  function end() {
+    if (ended) return; ended = true;
+    intro.classList.add('done');
+    document.documentElement.classList.remove('intro-lock');
+    setTimeout(function () { if (intro.parentNode) intro.parentNode.removeChild(intro); }, 950);
+  }
+  window.__skipIntro = end;
+  setTimeout(end, 4400);
+})();
+</script>
 </body>
 </html>

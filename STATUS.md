@@ -2,6 +2,11 @@
 
 **Date:** 2026-07-12
 
+## 2026-07-12 — campus gateway homepage
+- Root homepage is now a neutral Symbios campus gateway: hero ("One Campus. Every Dimension of Your Health."), four brand door panels with accent colors/services/phones, one-team section, testimonials, map
+- Intro animation overlay: brand logos converge into Symbios, tagline slides in, logo rises, curtain lift (~4.4s); skippable, once per session (sessionStorage), honors prefers-reduced-motion, content rendered beneath for SEO
+- Root JSON-LD now lists the four sub-brands as department entries
+
 ## Just completed
 ## 2026-07-12 — brand-consistency + SEO round
 - Newsletter eyebrow reworded: "We don&#39;t keep secrets" (odd tone for a medical campus) is now "Wellness tips from our experts" on all 46 pages
