@@ -41,11 +41,11 @@ a:hover { color: #050505; }
 img { max-width: 100%; height: auto; display: block; }
 
 /* ---------- Campus gateway: intro animation overlay ---------- */
-html.intro-lock { overflow: hidden; }
-.intro { position: fixed; inset: 0; z-index: 9999; background: #F1ECE8; display: none; align-items: center; justify-content: center; overflow: hidden; opacity: 1; transition: opacity .9s ease; }
-.intro.done { opacity: 0; }
+html.intro-lock { overflow: hidden; scrollbar-gutter: stable; }
+.intro { position: fixed; inset: 0; z-index: 9999; background: #F1ECE8; display: none; align-items: center; justify-content: center; overflow: hidden; opacity: 1; transition: opacity 1.2s cubic-bezier(.4,0,.2,1); will-change: opacity; }
+.intro.done { opacity: 0; pointer-events: none; }
 .intro.done .intro-stage { transform: translateY(-22px); }
-.intro-stage { position: relative; width: min(880px, 94vw); height: 480px; transition: transform .9s ease; }
+.intro-stage { position: relative; width: min(880px, 94vw); height: 480px; transition: transform 1.2s cubic-bezier(.4,0,.2,1); will-change: transform; }
 /* kicker + hairline rule */
 .intro-kicker { position: absolute; top: 6%; left: 0; right: 0; text-align: center; font-family: var(--font-body); font-size: 12px; font-weight: 600; letter-spacing: .38em; text-transform: uppercase; color: #8a7f72; opacity: 0; }
 .intro.run .intro-kicker { animation: introFadeIn 1s ease .2s forwards, introFadeOut .7s ease 5.9s forwards; }
