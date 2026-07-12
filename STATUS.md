@@ -3,6 +3,7 @@
 **Date:** 2026-07-12
 
 ## 2026-07-12 — campus gateway homepage
+- Intro rebuilt as a title sequence after feedback (corner fly-in read as cheap; flex bug jumbled the tagline): kicker + hairline rule, brands shown one at a time at 440px, word-by-word tagline, Symbios lockup, soft fade exit (~10.4s, skippable)
 - Intro logos enlarged to 400px with a new hold phase: fly in to a 2x2 spread, hold readable ~1.7s, then converge; Symbios logo also 400px; total sequence ~9.2s
 - Intro animation fixes after live review: convergence point was 325px off-center on desktop (min() vs transform centering bug) — now transform-centered at all widths; timeline slowed from ~4.4s to ~7.6s
 - Root homepage is now a neutral Symbios campus gateway: hero ("One Campus. Every Dimension of Your Health."), four brand door panels with accent colors/services/phones, one-team section, testimonials, map
