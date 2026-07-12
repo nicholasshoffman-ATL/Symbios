@@ -3,6 +3,7 @@
 **Date:** 2026-07-12
 
 ## 2026-07-12 — campus gateway homepage
+- Client feedback: brand names rendered as one word (SymbiosHealth, PrimaryCare, PhysioTherapy, SymbiosFit, SymbiosAria) in the campus bar, nav dropdowns, door buttons, footer brand lines, copyrights and intro kicker — 519 references across 46 pages; prose sentences untouched
 - Hero second CTA fixed (was white-on-white via .btn-outline collision) with new .btn-ghost class; mobile audit: newsletter signup image was forcing 65px horizontal overflow at 375px — capped with min(420px,100%); hamburger/doors/brand-bar verified good on mobile
 - Intro exit smoothed: scrollbar-gutter reserved during lock (was causing a 15px mid-fade layout shift), scroll unlock deferred until fade completes, fade lengthened to 1.2s with will-change compositing
 - Intro rebuilt as a title sequence after feedback (corner fly-in read as cheap; flex bug jumbled the tagline): kicker + hairline rule, brands shown one at a time at 440px, word-by-word tagline, Symbios lockup, soft fade exit (~10.4s, skippable)
