@@ -1,6 +1,10 @@
 # Project Status — Symbios Site Rebuild
 
-**Date:** 2026-07-12
+**Date:** 2026-07-13
+
+## 2026-07-13 — PrimaryCare consultation + copy fix
+- PrimaryCare now has its own green-branded /primary-care/request-a-consultation/ (form, hours, new-patient-forms link); all 10 PrimaryCare pages retargeted off the SymbiosHealth form
+- Gateway and llms.txt: removed "one address" claim (SymbiosFit has a nearby satellite space); sitemap regenerated (47 URLs)
 
 ## 2026-07-12 — campus gateway homepage
 - Final link sweep: 46 pages internal links/assets all resolve; 28 unique external URLs verified live (initial 403s were the live site WAF rate-limiting the checker) — one real 404 found and unlinked (past-dated /event/ webinar on advanced-ed-solutions); sitemap.xml regenerated (46 URLs), robots.txt staging-blocked with flip-at-launch note, llms.txt added
