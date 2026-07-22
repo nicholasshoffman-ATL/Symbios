@@ -249,7 +249,9 @@ label { font-size: .82rem; font-weight: 500; color: var(--color-text-soft); }
 
 /* ---------- Brand strip ---------- */
 .brand-strip { display: flex; justify-content: center; align-items: center; gap: 56px; flex-wrap: wrap; margin-top: 40px; }
-.brand-strip img { max-height: 80px; width: auto; filter: none; }
+/* Constrain by width, not height (live uses max-width on every brand logo) so the
+   wider SymbiosHealth lockup doesn't out-scale the sub-brand lockups beside it */
+.brand-strip img { max-width: 260px; width: auto; height: auto; filter: none; }
 
 /* ---------- Newsletter band (live: color_primary section + image button) ---------- */
 .newsletter { background: var(--brand); color: #fff; text-align: center; }
