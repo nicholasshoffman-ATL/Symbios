@@ -1,6 +1,11 @@
 # Project Status — Symbios Site Rebuild
 
-**Date:** 2026-07-13
+**Date:** 2026-07-18
+
+## 2026-07-18 — SymbiosFit phone correction
+- **Client correction: SymbiosFit line is (843) 738-4600, not 4604.** Updated all 57 occurrences site-wide — topbars/footers on the 11 fit pages, every `tel:` link, the homepage LocalBusiness department schema, llms.txt, README, SITE-SPEC, SEO-REVIEW — so NAP stays consistent. Verified 0 stale `4604` remain.
+- Removed the Port Royal Plaza address from the SymbiosFit card in the homepage "Where Would You Like to Start?" grid so all four campus cards match. The satellite address intentionally remains in the /fit/ footers, fit map embed, and JSON-LD.
+- Repo moved to `C:\dev\Symbios` (was Downloads\brooke fin); preview launch.json path updated.
 
 ## 2026-07-13 — PrimaryCare consultation + copy fix
 - Added ToDoList.md (SymbiosFit hours tabled there per client), branded 404.html (Render serves it automatically), and REDIRECTS.md — full 301 map for old subdomain + www URLs ready for Cloudflare/Render at cutover
