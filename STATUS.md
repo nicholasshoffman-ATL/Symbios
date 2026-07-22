@@ -2,6 +2,10 @@
 
 **Date:** 2026-07-18
 
+## 2026-07-18 — dropdown typography
+- Dropdown links now match the top-level nav exactly: **13px / weight 500 / uppercase / .05em** (were .9rem, mixed case, weight 300 inherited from body). Live styles the whole menu as one unit so both levels share type; the rebuild had only styled level 1. Verified identical computed type on the main site and sub-brands.
+- **Open decision:** uppercasing makes the one-word brand names read `PRIMARYCARE` / `PHYSIOTHERAPY` / `SYMBIOSFIT` / `SYMBIOSARIA` (live showed two words: "PRIMARY CARE"). Consistent with the client's one-word directive, but the camelCase readability cue is lost — confirm with client.
+
 ## 2026-07-18 — header logo sizing + dropdown animation
 - **Logo sizing corrected to the live spec.** The live sites size each lockup so every brand's header logo lands at ~322px wide: main site 80px tall (430x107 source), sub-brands 100px (345x107) at >=1381px, 80px below. The rebuild used a flat 80px everywhere, which made the wider SymbiosHealth lockup render 321x80 vs 258x80 for the others — reading ~24% larger. Now verified at 1500px: Health 321w, PrimaryCare/PhysioTherapy/SymbiosFit 322w, SymbiosAria 336w.
 - **Nav dropdowns now unroll** like the live nav (Impreza `dropdown_height`): `scaleY(0)->1` from the top edge + opacity fade, .3s. Replaces the instant `display:none/block`. Added `:focus-within` for keyboard users, a `prefers-reduced-motion` opt-out, and a transform reset for the mobile stacked menu.
