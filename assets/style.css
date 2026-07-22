@@ -129,14 +129,28 @@ html.intro-lock { overflow: hidden; scrollbar-gutter: stable; }
 header.site-header { background: #ffffff; position: relative; z-index: 100; }
 .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; height: 120px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .logo { display: flex; align-items: center; gap: 10px; }
+/* Live spec: the main site logo is 80px and each sub-brand lockup is 100px on wide
+   desktop (>=1381px), which lands every brand's header logo at ~322px wide. */
 .logo img { height: 80px; width: auto; }
+@media (min-width: 1381px) {
+  body.brand-fit .logo img,
+  body.brand-pc .logo img,
+  body.brand-physio .logo img,
+  body.brand-aria .logo img { height: 100px; }
+}
 nav.main-nav { display: flex; gap: 28px; align-items: center; }
 nav.main-nav > .nav-item { position: relative; }
 nav.main-nav a.nav-link { color: var(--color-header-text); font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: .05em; padding: 24px 0; display: inline-block; }
 nav.main-nav a.nav-link:hover { color: var(--brand); }
 /* live: dropdown lists use the cream header bg, brand-color hover */
-.dropdown { display: none; position: absolute; top: 100%; left: -14px; background: var(--color-bg); min-width: 250px; box-shadow: 0 8px 24px rgba(0,0,0,.12); padding: 8px 0; z-index: 50; }
-.nav-item:hover .dropdown { display: block; }
+/* Dropdown unrolls from the top edge — matches the live nav's Impreza
+   "dropdown_height" style: transform:scaleY(0)->1 + fade, .3s */
+.dropdown { position: absolute; top: 100%; left: -14px; background: var(--color-bg); min-width: 250px; box-shadow: 0 8px 24px rgba(0,0,0,.12); padding: 8px 0; z-index: 50;
+  visibility: hidden; opacity: 0; transform: scaleY(0) translateZ(0); transform-origin: 50% 0;
+  transition: transform .3s, opacity .3s, visibility .3s; }
+.nav-item:hover .dropdown,
+.nav-item:focus-within .dropdown { visibility: visible; opacity: 1; transform: scaleY(1) translateZ(0); }
+@media (prefers-reduced-motion: reduce) { .dropdown { transition: none; } }
 .dropdown a { display: block; padding: 9px 18px; font-size: .9rem; color: var(--color-header-text); }
 .dropdown a:hover { color: var(--brand); }
 .menu-toggle { display: none; }
@@ -299,7 +313,8 @@ ul.checklist.cols-2 li { break-inside: avoid; }
   .menu-toggle { display: block; background: none; border: 0; font-size: 1.6rem; color: var(--color-header-text); cursor: pointer; }
   nav.main-nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--color-bg); padding: 16px 24px; gap: 4px; align-items: flex-start; box-shadow: 0 12px 24px rgba(0,0,0,.12); z-index: 90; }
   nav.main-nav.open a.nav-link { padding: 10px 0; }
-  nav.main-nav.open .dropdown { display: block; position: static; box-shadow: none; background: transparent; padding-left: 14px; min-width: 0; }
+  nav.main-nav.open .dropdown { display: block; position: static; box-shadow: none; background: transparent; padding-left: 14px; min-width: 0;
+    visibility: visible; opacity: 1; transform: none; transition: none; }
   header.site-header { position: relative; }
   .header-inner { position: relative; }
 }
